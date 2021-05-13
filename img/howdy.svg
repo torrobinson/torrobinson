@@ -22,6 +22,7 @@
         --dash-delay: calc( var(--animation-total) / var(--color-count) );
       }
       
+	  /* Generated font to bse64 with https://hellogreg.github.io/woff2base/ */
 @font-face { 
   font-family: "Fredoka One";
   /* Add other properties here, as needed. For example: */

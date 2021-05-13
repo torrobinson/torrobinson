@@ -1,5 +1,6 @@
 <svg width="500" height="100" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
+    <style type="text/css">@import url(https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap);</style>
     <style>
       :root{
         --stroke-width: 3;
@@ -21,9 +22,11 @@
         --animation-total: 4s;
         --dash-delay: calc( var(--animation-total) / var(--color-count) );
       }
+            
       svg {
         width: 100%;
-        font: 5em 'Arial', 'sans-serif';
+        font-size: 5em;
+        font-family: 'Fredoka One', sans-serif;
       }
 
       .text {

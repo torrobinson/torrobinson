@@ -1,71 +1,117 @@
 <svg width="500" height="100" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
-	<style>
-  :root{
-    --color-1: #FFBA49;
-    --color-2: #7353ba;
-    --color-3: #3993dd;
-    --color-4: #ff729f;
-    --color-5: #23001E;
-  }
-	svg {
-		width: 100%;
-		font: 5em 'Arial', 'sans-serif';
-	}
+    <style>
+      :root{
+        --stroke-width: 3;
+        
+        --color-1: #F72585;
+        --color-2: #B5179E;
+        --color-3: #7209B7;
+        --color-4: #560BAD;
+        --color-5: #480CA8;
+        --color-6: #3A0CA3;
+        --color-7: #3F37C9;
+        --color-8: #4361EE;
+        --color-9: #4895EF;
+        --color-10: #4CC9F0;
+        
+        --color-count: 10; /* ^^^ */
+        
+        --dash-offset: -500;
+        --animation-total: 4s;
+        --dash-delay: calc( var(--animation-total) / var(--color-count) );
+      }
+      svg {
+        width: 100%;
+        font: 5em 'Arial', 'sans-serif';
+      }
 
-	.text {
-		fill: none;
-		stroke-width: 3;
-		stroke-linejoin: round;
-		stroke-dasharray: 70 330;
-		stroke-dashoffset: 0;
-		-webkit-animation: stroke 6s infinite linear;
-		animation: stroke 6s infinite linear;
-	}
-	.text:nth-child(5n+1) {
-		stroke: var(--color-1);
-		-webkit-animation-delay: -1.2s;
-		animation-delay: -1.2s;
-	}
-	.text:nth-child(5n+2) {
-		stroke: var(--color-2);
-		-webkit-animation-delay: -2.4s;
-		animation-delay: -2.4s;
-	}
-	.text:nth-child(5n+3) {
-		stroke: var(--color-3);
-		-webkit-animation-delay: -3.6s;
-		animation-delay: -3.6s;
-	}
-	.text:nth-child(5n+4) {
-		stroke: var(--color-4);
-		-webkit-animation-delay: -4.8s;
-		animation-delay: -4.8s;
-	}
-	.text:nth-child(5n+5) {
-		stroke: var(--color-5);
-		-webkit-animation-delay: -6s;
-		animation-delay: -6s;
-	}
+      .text {
+        fill: none;
+        stroke-width: var(--stroke-width);
+        stroke-linejoin: round;
+        stroke-dasharray: calc(-1 * var(--dash-offset) * 0.1) calc(-1 * var(--dash-offset) * 0.9); /*size of line, size of gap, repeat*/
+        stroke-dashoffset: 0;
+        animation: stroke var(--animation-total) infinite linear;
+      }
+      .text:nth-child(10n+1) {
+        --index:1;
+        stroke: var(--color-1);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
+      .text:nth-child(10n+2) {
+        --index:2;
+        stroke: var(--color-2);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
+      .text:nth-child(10n+3) {
+        --index:3;
+        stroke: var(--color-3);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
+      .text:nth-child(10n+4) {
+        --index:4;
+        stroke: var(--color-4);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
+      .text:nth-child(10n+5) {
+        --index:5;
+        stroke: var(--color-5);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
+      .text:nth-child(10n+6) {
+        --index:6;
+        stroke: var(--color-6);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
+      .text:nth-child(10n+7) {
+        --index:7;
+        stroke: var(--color-7);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
+      .text:nth-child(10n+8) {
+        --index:8;
+        stroke: var(--color-1);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
+      .text:nth-child(10n+9) {
+        --index:9;
+        stroke: var(--color-9);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
+      .text:nth-child(10n+10) {
+        --index:10;
+        stroke: var(--color-10);
+        animation-delay: calc(-1 * var(--dash-delay) * var(--index));
+      }
 
-	@-webkit-keyframes stroke {
-		100% {
-			stroke-dashoffset: -400;
-		}
-	}
-	@keyframes stroke {
-		100% {
-			stroke-dashoffset: -400;
-		}
-	}
-	</style>
+
+
+      @-webkit-keyframes stroke {
+        100% {
+          stroke-dashoffset: var(--dash-offset);
+        }
+      }
+      @keyframes stroke {
+        100% {
+          stroke-dashoffset: var(--dash-offset);
+        }
+      }
+    </style>
 	</defs>
   <symbol id="s-text">
     <text text-anchor="middle" x="50%" y="50%" dy=".35em">Well Howdy!</text>
   </symbol>
+  
   <use class="text" xlink:href="#s-text"></use>
   <use class="text" xlink:href="#s-text"></use>
   <use class="text" xlink:href="#s-text"></use>
   <use class="text" xlink:href="#s-text"></use>
   <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  
  </svg>

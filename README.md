@@ -1,1 +1,1 @@
-### 🌈 Well howdy 🌈
+<p align="center"><img src="img/howdy.svg" /></p>

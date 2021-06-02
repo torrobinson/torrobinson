@@ -16,5 +16,5 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=torrobinson&count_private=true&show_icons=true&theme=dracula" />
+  <img src="https://github-readme-stats.vercel.app/api?username=torrobinson&count_private=true&show_icons=true&theme=material-palenight&hide_border=true&bg_color=ffffff00" />
 </p>

@@ -19,5 +19,5 @@
   <img src="https://github-readme-stats.vercel.app/api?username=torrobinson&count_private=true&show_icons=true&theme=material-palenight&hide_border=true&bg_color=ffffff00&title_color=F72585&icon_color=5F93EB&text_color=A6ABCA" />
 </p>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=torrobinson&hide=lua&layout=compact&title_color=F72585&hide_border=true&bg_color=ffffff00&custom_title=Languages&card_width=450&text_color=A6ABCA" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=torrobinson&langs_count=10&layout=compact&title_color=F72585&hide_border=true&bg_color=ffffff00&custom_title=Languages&card_width=450&text_color=A6ABCA" />
 </p>

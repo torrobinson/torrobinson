@@ -14,6 +14,3 @@
     <img src="https://img.shields.io/badge/Personal%20Website-560BAD?logo=HomeAdvisor&logoColor=white" />
   </a>
 </p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=torrobinson&langs_count=10&layout=compact&title_color=F72585&hide_border=true&bg_color=ffffff00&custom_title=Languages&card_width=450&text_color=A6ABCA" />
-</p>
